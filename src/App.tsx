@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import styles from "./App.module.css"
+import Form from "./components/Forms/Form"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Buscador de clima</h1>
+      <h1 className={styles.title}>Buscador de clima</h1>
+      <div className={styles.container}>
+        <Form />
+        <p>2</p>
+      </div>
     </>
   )
 }
